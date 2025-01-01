@@ -1,0 +1,221 @@
+/**Border-Box**/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*font*/
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*structure*/
+
+header {
+  border-bottom: solid 1px gray;
+  padding-bottom: 8px;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+h1 {
+  color: #f2f2f2;
+  font-size: 48px;
+  font-family: "Poppins", sans-serif;
+}
+h2 {
+  color: #f2f2f2;
+  font-size: 38px;
+  font-family: "Poppins", sans-serif;
+}
+h3 {
+  color: #f2f2f2;
+}
+#about h2 {
+  color: #f2f2f2;
+  font-size: 38px;
+  font-weight: 700;
+}
+p {
+  color: #f2f2f2;
+}
+p a {
+  color: #f2f2f2;
+}
+p a:hover {
+  color: #d98555;
+}
+ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+nav {
+  color: #f2f2f2;
+  display: flex;
+  justify-self: center;
+}
+footer {
+  width: 100%;
+  background-color: #131d26;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: auto;
+  border-top: solid 1px gray;
+}
+footer p {
+  color: #f2f2f2;
+}
+footer a {
+  text-decoration: none;
+  color: #f2f2f2;
+  margin: 0 20px;
+}
+button#menuToggle {
+  border: none;
+  font-size: 25px;
+}
+
+/*Mobile Css*/
+@media (max-width: 992px) {
+  .sectionTwo {
+    flex-direction: column-reverse;
+  }
+}
+/***font awesome***/
+i.fa-solid.fa-phone::before {
+  margin-right: 6px;
+}
+/*custom_classes*/
+
+.hero {
+  position: relative;
+  background-image: url('../images/gulp-holding.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); 
+  z-index: 1;
+}
+.hero h1,
+.hero p {
+  position: relative;
+  z-index: 2; 
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+.menuItem {
+  position: relative;
+}
+.title {
+  text-align: center;
+}
+.menuItem::after, a.menuItem:focus, a.menuItem:hover {
+border-bottom: 2px white solid;
+}
+
+a.menuItem {
+  margin: 0 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+.logo {
+  width: 150px;
+  height: auto;
+}
+.bodySection {
+  background: #131d26;
+  font-family: Lato;
+}
+p.caption {
+  font-size: 14px;
+  margin-top: 8px;
+}
+.imgContainer {
+  text-align: center;
+  border-radius: 4px;
+}
+.imgContainer img {
+  width: 100%;
+  max-width: 450px;
+}
+.imgContainer p {
+  text-align: center;
+}
+img.clip {
+  clip-path: inset(0 0 55px 0);
+}
+p.caption.shop {
+  margin-top: -44px;
+}
+a.btn {
+  margin: 20px;
+  background: #d98555;
+  color: #f2f2f2;
+  padding: 15px;
+  margin-bottom: 40px;
+  width: 200px;
+  font-weight: bold;
+  border: #d98555 solid 2px;
+  font-family: "Poppins", sans-serif;
+}
+a.btn:hover {
+  transform: scale(1.1);
+  background: transparent;
+  color: #f2f2f2;
+  border: #d98555 solid 2px;
+}
+
+.product-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0; 
+}
+.card-body {
+  background: #131d26;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+h3.card-title {
+  color: #f2f2f2;
+}
+.product:last-child {
+  border-bottom: none;
+}
+
